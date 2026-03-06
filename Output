@@ -1,0 +1,389 @@
+mca@MCA9:~/Desktop/Safwan/networklab$ userdel student
+userdel: Permission denied.
+userdel: cannot lock /etc/passwd; try again later.
+mca@MCA9:~/Desktop/Safwan/networklab$ ls
+abc.tar  ameen	aseem  f1.text	file3.txt  linux.txt  luqman  network  networklab  python  s2.text  stati  suii
+mca@MCA9:~/Desktop/Safwan/networklab$ sudo user add student1
+[sudo] password for mca: 
+sudo: user: command not found
+mca@MCA9:~/Desktop/Safwan/networklab$ sudo  add student1
+sudo: add: command not found
+mca@MCA9:~/Desktop/Safwan/networklab$ sudo useradd student1
+useradd: user 'student1' already exists
+mca@MCA9:~/Desktop/Safwan/networklab$ userdel student1
+userdel: Permission denied.
+userdel: cannot lock /etc/passwd; try again later.
+mca@MCA9:~/Desktop/Safwan/networklab$ sado userdel student1
+
+Command 'sado' not found, did you mean:
+
+  command 'sudo' from deb sudo (1.8.31-1ubuntu1.5)
+  command 'sudo' from deb sudo-ldap (1.8.31-1ubuntu1.5)
+  command 'sadt' from deb devscripts (2.20.2ubuntu2)
+  command 'sadf' from deb sysstat (12.2.0-2ubuntu0.3)
+
+Try: sudo apt install <deb name>
+
+mca@MCA9:~/Desktop/Safwan/networklab$ sudo userdel student1
+mca@MCA9:~/Desktop/Safwan/networklab$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+udev             3950072        0   3950072   0% /dev
+tmpfs             800368     1788    798580   1% /run
+/dev/sda1      148899576 66386460  74876636  47% /
+tmpfs            4001836        0   4001836   0% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+tmpfs            4001836        0   4001836   0% /sys/fs/cgroup
+/dev/loop0       1588224  1588224         0 100% /snap/android-studio/205
+/dev/loop2           128      128         0 100% /snap/bare/5
+/dev/loop3        344192   344192         0 100% /snap/code/225
+/dev/loop1       1526784  1526784         0 100% /snap/android-studio/209
+/dev/loop7         65408    65408         0 100% /snap/core20/2717
+/dev/loop8         56832    56832         0 100% /snap/core18/2979
+/dev/loop4        344192   344192         0 100% /snap/code/226
+/dev/loop5         56832    56832         0 100% /snap/core18/2976
+/dev/loop6         65408    65408         0 100% /snap/core20/2686
+/dev/loop11        75776    75776         0 100% /snap/core22/2339
+/dev/loop10       358144   358144         0 100% /snap/gnome-3-38-2004/143
+/dev/loop9         75776    75776         0 100% /snap/core22/2292
+/dev/loop13        93952    93952         0 100% /snap/gtk-common-themes/1535
+/dev/loop15       544128   544128         0 100% /snap/gnome-42-2204/247
+/dev/loop14        66688    66688         0 100% /snap/gtk-common-themes/1515
+/dev/loop12       528640   528640         0 100% /snap/gnome-42-2204/226
+/dev/loop16       358144   358144         0 100% /snap/gnome-3-38-2004/140
+/dev/loop17        13312    13312         0 100% /snap/snap-store/1113
+/dev/loop19      1289472  1289472         0 100% /snap/pycharm-community/568
+/dev/loop18      1287680  1287680         0 100% /snap/pycharm-community/560
+/dev/loop23        52224    52224         0 100% /snap/snapd/25577
+/dev/loop20       223744   223744         0 100% /snap/gnome-3-34-1804/90
+/dev/loop21       223744   223744         0 100% /snap/gnome-3-34-1804/93
+/dev/loop24        49280    49280         0 100% /snap/snapd/25935
+/dev/loop22        12544    12544         0 100% /snap/snap-store/1216
+/dev/loop26        40832    40832         0 100% /snap/solc/8059
+/dev/loop25        40832    40832         0 100% /snap/solc/8048
+tmpfs             800364       36    800328   1% /run/user/1000
+mca@MCA9:~/Desktop/Safwan/networklab$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      8 ?        00:00:00 kworker/0:0H-events_highpri
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_rude_
+     12 ?        00:00:00 rcu_tasks_trace
+     13 ?        00:00:00 ksoftirqd/0
+     14 ?        00:00:00 rcu_sched
+     15 ?        00:00:00 migration/0
+     16 ?        00:00:00 idle_inject/0
+     18 ?        00:00:00 cpuhp/0
+     19 ?        00:00:00 cpuhp/1
+     20 ?        00:00:00 idle_inject/1
+     21 ?        00:00:00 migration/1
+     22 ?        00:00:00 ksoftirqd/1
+     24 ?        00:00:00 kworker/1:0H-kblockd
+     25 ?        00:00:00 cpuhp/2
+     26 ?        00:00:00 idle_inject/2
+     27 ?        00:00:00 migration/2
+     28 ?        00:00:00 ksoftirqd/2
+     30 ?        00:00:00 kworker/2:0H-events_highpri
+     31 ?        00:00:00 cpuhp/3
+     32 ?        00:00:00 idle_inject/3
+     33 ?        00:00:00 migration/3
+     34 ?        00:00:00 ksoftirqd/3
+     36 ?        00:00:00 kworker/3:0H-events_highpri
+     37 ?        00:00:00 kdevtmpfs
+     38 ?        00:00:00 inet_frag_wq
+     39 ?        00:00:00 kauditd
+     40 ?        00:00:00 khungtaskd
+     41 ?        00:00:00 oom_reaper
+     42 ?        00:00:00 writeback
+     43 ?        00:00:00 kcompactd0
+     44 ?        00:00:00 ksmd
+     45 ?        00:00:00 khugepaged
+     92 ?        00:00:00 kintegrityd
+     93 ?        00:00:00 kblockd
+     94 ?        00:00:00 blkcg_punt_bio
+     95 ?        00:00:00 tpm_dev_wq
+     96 ?        00:00:00 ata_sff
+     97 ?        00:00:00 md
+     98 ?        00:00:00 edac-poller
+     99 ?        00:00:00 devfreq_wq
+    100 ?        00:00:00 watchdogd
+    103 ?        00:00:00 kswapd0
+    104 ?        00:00:00 kworker/0:1H-events_highpri
+    105 ?        00:00:00 ecryptfs-kthrea
+    108 ?        00:00:00 kthrotld
+    109 ?        00:00:02 kworker/3:1-events
+    110 ?        00:00:00 acpi_thermal_pm
+    112 ?        00:00:00 vfio-irqfd-clea
+    114 ?        00:00:00 mld
+    115 ?        00:00:00 ipv6_addrconf
+    125 ?        00:00:00 kstrp
+    128 ?        00:00:00 zswap-shrink
+    129 ?        00:00:00 kworker/u33:0-i915_flip
+    134 ?        00:00:00 charger_manager
+    135 ?        00:00:00 kworker/1:2-events
+    170 ?        00:00:00 kworker/3:1H-kblockd
+    182 ?        00:00:00 kworker/2:1H-kblockd
+    183 ?        00:00:00 scsi_eh_0
+    184 ?        00:00:00 scsi_tmf_0
+    185 ?        00:00:00 scsi_eh_1
+    186 ?        00:00:00 scsi_tmf_1
+    187 ?        00:00:00 scsi_eh_2
+    188 ?        00:00:00 scsi_tmf_2
+    189 ?        00:00:00 scsi_eh_3
+    190 ?        00:00:00 scsi_tmf_3
+    191 ?        00:00:00 scsi_eh_4
+    192 ?        00:00:00 scsi_tmf_4
+    193 ?        00:00:00 scsi_eh_5
+    194 ?        00:00:00 scsi_tmf_5
+    209 ?        00:00:00 kworker/3:2-events
+    239 ?        00:00:00 kworker/1:1H-events_highpri
+    241 ?        00:00:00 jbd2/sda1-8
+    242 ?        00:00:00 ext4-rsv-conver
+    285 ?        00:00:00 systemd-journal
+    315 ?        00:00:00 systemd-udevd
+    413 ?        00:00:00 kworker/2:3-events
+    415 ?        00:00:00 systemd-resolve
+    421 ?        00:00:00 systemd-timesyn
+    425 ?        00:00:00 irq/26-mei_me
+    502 ?        00:00:00 card0-crtc0
+    503 ?        00:00:00 card0-crtc1
+    549 ?        00:00:00 cryptd
+    829 ?        00:00:00 accounts-daemon
+    830 ?        00:00:00 acpid
+    833 ?        00:00:02 avahi-daemon
+    834 ?        00:00:00 cron
+    836 ?        00:00:00 dbus-daemon
+    838 ?        00:00:00 NetworkManager
+    849 ?        00:00:00 irqbalance
+    853 ?        00:00:00 networkd-dispat
+    859 ?        00:00:00 polkitd
+    861 ?        00:00:00 rsyslogd
+    866 ?        00:00:02 snapd
+    873 ?        00:00:00 switcheroo-cont
+    880 ?        00:00:00 systemd-logind
+    882 ?        00:00:00 systemd-machine
+    883 ?        00:00:00 thermald
+    886 ?        00:00:01 udisksd
+    892 ?        00:00:00 wpa_supplicant
+    910 ?        00:00:00 avahi-daemon
+    977 ?        00:00:00 colord
+    978 ?        00:00:00 cups-browsed
+    993 ?        00:00:00 ModemManager
+    995 ?        00:00:00 libvirtd
+   1001 ?        00:00:00 unattended-upgr
+   1012 ?        00:00:00 gdm3
+   1031 ?        00:00:00 gdm-session-wor
+   1062 ?        00:00:00 apache2
+   1063 ?        00:00:00 apache2
+   1064 ?        00:00:00 apache2
+   1141 ?        00:00:00 systemd
+   1143 ?        00:00:00 (sd-pam)
+   1170 ?        00:00:00 bpfilter_umh
+   1178 ?        00:00:00 pulseaudio
+   1181 ?        00:00:00 gnome-keyring-d
+   1185 tty2     00:00:00 gdm-x-session
+   1188 tty2     00:00:15 Xorg
+   1189 ?        00:00:00 rtkit-daemon
+   1192 ?        00:00:14 mysqld
+   1215 ?        00:00:00 dbus-daemon
+   1292 ?        00:00:00 dnsmasq
+   1293 ?        00:00:00 dnsmasq
+   1359 ?        00:00:00 cupsd
+   1365 ?        00:00:00 dbus
+   1404 tty2     00:00:00 gnome-session-b
+   1469 ?        00:00:00 ssh-agent
+   1494 ?        00:00:00 at-spi-bus-laun
+   1504 ?        00:00:00 dbus-daemon
+   1528 ?        00:00:00 gnome-session-c
+   1536 ?        00:00:00 gnome-session-b
+   1554 ?        00:00:22 gnome-shell
+   1576 ?        00:00:00 gvfsd
+   1581 ?        00:00:00 gvfsd-fuse
+   1613 ?        00:00:00 ibus-daemon
+   1617 ?        00:00:00 ibus-dconf
+   1618 ?        00:00:01 ibus-extension-
+   1620 ?        00:00:00 ibus-x11
+   1625 ?        00:00:00 ibus-portal
+   1635 ?        00:00:00 at-spi2-registr
+   1639 ?        00:00:00 xdg-permission-
+   1645 ?        00:00:00 gnome-shell-cal
+   1653 ?        00:00:00 evolution-sourc
+   1657 ?        00:00:00 upowerd
+   1660 ?        00:00:00 goa-daemon
+   1679 ?        00:00:00 evolution-calen
+   1688 ?        00:00:00 gvfs-udisks2-vo
+   1697 ?        00:00:00 goa-identity-se
+   1705 ?        00:00:00 gvfs-gphoto2-vo
+   1709 ?        00:00:00 gvfs-afc-volume
+   1716 ?        00:00:00 gvfs-mtp-volume
+   1725 ?        00:00:00 dconf-service
+   1726 ?        00:00:00 evolution-addre
+   1728 ?        00:00:00 gvfs-goa-volume
+   1753 ?        00:00:00 gjs
+   1763 ?        00:00:00 gvfsd-trash
+   1772 ?        00:00:00 gsd-a11y-settin
+   1774 ?        00:00:00 gsd-color
+   1777 ?        00:00:00 gsd-datetime
+   1779 ?        00:00:00 gsd-housekeepin
+   1780 ?        00:00:00 gsd-keyboard
+   1781 ?        00:00:00 gsd-media-keys
+   1782 ?        00:00:00 gsd-power
+   1783 ?        00:00:00 gsd-print-notif
+   1784 ?        00:00:00 gsd-rfkill
+   1786 ?        00:00:00 gsd-screensaver
+   1788 ?        00:00:00 gsd-sharing
+   1790 ?        00:00:00 gsd-smartcard
+   1792 ?        00:00:00 gsd-sound
+   1796 ?        00:00:00 gsd-usb-protect
+   1805 ?        00:00:00 gsd-wacom
+   1809 ?        00:00:00 gsd-wwan
+   1810 ?        00:00:00 gsd-xsettings
+   1827 ?        00:00:00 evolution-alarm
+   1837 ?        00:00:00 gsd-disk-utilit
+   1896 ?        00:00:00 ibus-engine-sim
+   1911 ?        00:00:00 gsd-printer
+   1923 ?        00:00:00 whoopsie
+   1937 ?        00:00:00 kerneloops
+   1945 ?        00:00:00 kerneloops
+   1954 ?        00:00:00 iprt-VBoxWQueue
+   1959 ?        00:00:00 iprt-VBoxTscThr
+   1970 ?        00:00:05 snap-store
+   1982 ?        00:00:00 tracker-miner-f
+   1998 ?        00:00:00 xdg-document-po
+   2071 ?        00:00:00 kworker/u33:1
+   2105 ?        00:00:00 xdg-desktop-por
+   2109 ?        00:00:00 xdg-desktop-por
+   2142 ?        00:00:00 fwupd
+   3497 ?        00:00:00 gvfsd-metadata
+   3500 ?        00:00:00 update-notifier
+   3664 ?        00:00:02 gnome-terminal-
+   3671 pts/0    00:00:00 bash
+   3748 ?        00:00:01 nautilus
+   3766 ?        00:00:00 oosplash
+   3801 ?        00:00:15 soffice.bin
+   3883 ?        00:00:01 kworker/1:1-events
+   3885 ?        00:00:01 kworker/2:0-events
+   3966 ?        00:00:00 kworker/0:0-events
+   4027 ?        00:00:00 kworker/0:2-events
+   4031 ?        00:00:00 kworker/u32:2-events_unbound
+   4034 ?        00:00:00 kworker/u32:0-events_unbound
+   4048 pts/0    00:00:00 ps
+mca@MCA9:~/Desktop/Safwan/networklab$ top
+
+top - 12:00:37 up  1:02,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks: 209 total,   2 running, 207 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.1 us,  1.5 sy,  0.0 ni, 95.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7816.1 total,   4513.8 free,   1373.9 used,   1928.3 buff/cache
+MiB Swap:   9615.0 total,   9615.0 free,      0.0 used.   5972.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                       
+    109 root      20   0       0      0      0 I   6.2   0.0   0:02.28 kworker/3:1-events                                                            
+   4049 mca       20   0   12012   3908   3236 R   6.2   0.0   0:00.01 top                                                                           
+      1 root      20   0  169104  12436   8408 S   0.0   0.2   0:01.37 systemd                                                                       
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd                                                                      
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                        
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                    
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 slub_flushwq                                                                  
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                         
+      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                   
+     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                  
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                               
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                               
+     13 root      20   0       0      0      0 S   0.0   0.0   0:00.05 ksoftirqd/0                                                                   
+     14 root      20   0       0      0      0 I   0.0   0.0   0:00.44 rcu_sched                                                                     
+     15 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0                                                                   
+     16 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                 
+     18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                       
+     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                                                       
+     20 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/1                                                                 
+     21 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/1                                                                   
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.05 ksoftirqd/1                                                                   
+     24 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-kblockd                                                          
+     25 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2                                                                       
+     26 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/2                                                                 
+     27 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/2                                                                   
+     28 root      20   0       0      0      0 S   0.0   0.0   0:00.05 ksoftirqd/2                                                                   
+     30 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-events_highpri                                                   
+     31 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/3                                                                       
+     32 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/3                                                                 
+     33 root      rt   0       0      0      0 S   0.0   0.0   0:00.17 migration/3                                                                   
+     34 root      20   0       0      0      0 S   0.0   0.0   0:00.04 ksoftirqd/3                                                                   
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/3:0H-events_highpri                                                   
+     37 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                     
+     38 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                  
+     39 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                       
+     40 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd                                                                    
+     41 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                                                                    
+     42 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                                                     
+mca@MCA9:~/Desktop/Safwan/networklab$ cat > sam.txt
+AI Overview
+Artificial intelligence (AI) is
+a branch of computer science that enables machines to simulate human-like cognition, including learning, reasoning, problem-solving, and perception. By processing large data sets to recognize patterns, AI systems can perform tasks such as natural language processing, image recognition, and autonomous decision-making.mca@MCA9:~/Desktop/Safwan/networklab$ head 3 sam.txt
+head: cannot open '3' for reading: No such file or directory
+==> sam.txt <==
+AI Overview
+Artificial intelligence (AI) is
+a branch of computer science that enables machines to simulate human-like cognition, including learning, reasoning, problem-solving, and perception. By processing large data sets to recognize patterns, AI systems can perform tasks such as natural language processing, image recognition, and autonomous decision-making.mca@MCA9:~/Desktop/Safwan/networklab$ head -c 20 sam.txt
+AI Overview
+Artificimca@MCA9:~/Desktop/Safwan/networklab$ tail -n 5 sam.txt
+AI Overview
+Artificial intelligence (AI) is
+a branch of computer science that enables machines to simulate human-like cognition, including learning, reasoning, problem-solving, and perception. By processing large data sets to recognize patterns, AI systems can perform tasks such as natural language processing, image recognition, and autonomous decision-making.mca@MCA9:~/Desktop/Safwan/networklab$ ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command]
+mca@MCA9:~/Desktop/Safwan/networklab$ scp
+usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
+            [-J destination] [-l limit] [-o ssh_option] [-P port]
+            [-S program] source ... target
+mca@MCA9:~/Desktop/Safwan/networklab$ ssh -keygen
+Bad escape character 'ygen'.
+mca@MCA9:~/Desktop/Safwan/networklab$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mca/.ssh/id_rsa): home
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in home
+Your public key has been saved in home.pub
+The key fingerprint is:
+SHA256:djE+Tbb7j41BK4qCU0gurDO+EvM3WTqbEUs37PKOzmY mca@MCA9
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|                 |
+|          o o    |
+|    ..   . * .   |
+| . oo.+ S + o .  |
+|o o.o=oo . . o . |
+| = .+*.     o o  |
+|= ..E*.  . . o = |
+|o=.=**o.. .   +.o|
++----[SHA256]-----+
+mca@MCA9:~/Desktop/Safwan/networklab$ ssh-copy-id
+Usage: /usr/bin/ssh-copy-id [-h|-?|-f|-n] [-i [identity_file]] [-p port] [[-o <ssh -o options>] ...] [user@]hostname
+	-f: force mode -- copy keys without trying to check if they are already installed
+	-n: dry run    -- no keys are actually copied
+	-h|-?: print this help
+mca@MCA9:~/Desktop/Safwan/networklab$ echo "Welcome to linux"
+Welcome to linux
+mca@MCA9:~/Desktop/Safwan/networklab$ read name
+Safwan
+mca@MCA9:~/Desktop/Safwan/networklab$ echo $name
+Safwan
+mca@MCA9:~/Desktop/Safwan/networklab$ more sam.txt
+AI Overview
+Artificial intelligence (AI) is
+a branch of computer science that enables machines to simulate human-like cognition, including learning, reasoning, problem-solving, and perception. 
+By processing large data sets to recognize patterns, AI systems can perform tasks such as natural language processing, image recognition, and autonom
+ous decision-making.
+mca@MCA9:~/Desktop/Safwan/networklab$ less sam.txt
+mca@MCA9:~/Desktop/Safwan/networklab$ less linux.txt
+
